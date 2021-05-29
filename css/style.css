@@ -1,7 +1,10 @@
+
 :root{
     font-family: 'Roboto', sans-serif;
     max-width: 1000px;
+    width: 90%;
     margin: 0 auto;
+    color: rgb(8, 41, 71);
 }
 
 h1{
@@ -12,10 +15,14 @@ h1{
     margin: 0;
 }
 
+.top-p{
+    font-weight: 100;
+}
+
 .top-wrap{
     text-align: center;
     margin-top: 30px;
-    border-bottom: 5px solid rgb(8, 41, 71);;
+    border-bottom: 5px solid rgb(8, 41, 71);
 }
 
 .form-wrap{
@@ -25,10 +32,11 @@ h1{
 }
 
 .center-button{
-    margin: auto;
+    display: flex;
+    justify-content: center;
 }
 button{
-    width: 70%;
+    width: 80%;
     padding: 15px;
     background-color: rgb(75, 177, 168);
     border:2px solid rgb(75, 177, 168);
@@ -36,6 +44,8 @@ button{
     color: white;
     font-weight: bolder;
     font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
 button:hover{
@@ -47,9 +57,89 @@ button:hover{
 .contact-input{
     display: block;
     width: calc(100% - 50px);
-    padding:10px;
+    padding:15px;
+    margin: 15px;
+    margin-left: 0;
+}
+
+.contact-input,
+#zip,
+textarea{
+    border: 2px solid white;
+    background-color: rgb(236, 234, 234);
+    border-radius: 5px;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    outline: none;
+    border: 1.5px solid rgb(8, 41, 71);
 }
 
 fieldset{
     border: none;
+}
+legend{
+    font-size: 20px;
+    padding: 15px;
+    padding-left: 0;
+}
+#zip{
+    display: block;
+    width: 50%;
+    padding: 15px;
+    margin: 15px;
+    margin-left: 0;
+}
+
+#zip:focus{
+    outline: none;
+    border: 1.5px solid rgb(8, 41, 71);
+}
+
+::placeholder{
+    font-size: 12px;
+    text-align: right;
+    padding-right: 5px;
+}
+
+textarea{
+    width:90%;
+    height: 100px;
+    margin-top: 10px;
+    padding: 15px;
+}
+
+select{
+    color: rgb(97, 95, 95);
+}
+
+.fieldset-wrap{
+    border-top: 3px solid rgb(8, 41, 71);
+}
+
+.newsletter-title{
+    font-size: 15px;
+    display: block;
+    margin: 10px;
+}
+
+.check,
+.radio{
+    display: block;
+    padding: 6px;
+}
+
+#check,
+label.wrap-2{
+    padding: 10px;
+}
+
+.label-check{
+    font-size: 13px;
+}
+
+@media(min-width:768px){
+    
 }
