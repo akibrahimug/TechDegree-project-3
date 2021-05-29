@@ -12,72 +12,76 @@
 </head>
 <body>
     <h1>THE CODE REVIEW</h1>
+    <div class="top-wrap">
+        <h2>Signup for our newsletter</h2>
+        <p>Get the latest news on how your code is doing right in your inbox</p>
+    </div>
+    <div class="form-wrap">
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
 
-    <h2>Signup for our newsletter</h2>
-    <p>Get the latest news on how your code is doing right in your inbox</p>
+                <label for="name" class="cantact-label">Full Name</label>
+                <input type="text" id="name" name="user-name" class="contact-input">
 
-    <form>
-        <fieldset>
-            <legend>Contact Information</legend>
+                <label for="email" class="cantact-label">Email Address</label>
+                <input type="email" id="email" name="user-email" class="contact-input">   
 
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="user-name">
+                <label for="phone" class="cantact-label">Full Name</label>
+                <input type="tel" id="phone" name="user-phone" class="contact-input">
 
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="user-email">   
+                <label for="address" class="cantact-label">Street Address</label>
+                <input type="text" id="address" name="user-address" class="contact-input">
 
-            <label for="phone">Full Name</label>
-            <input type="tel" id="phone" name="user-phone">
+                <label for="city" class="cantact-label">City</label>
+                <input type="text" id="city" name="user-city" class="contact-input">
 
-            <label for="address">Street Address</label>
-            <input type="text" id="address" name="user-address">
+                <label for="state" class="cantact-label">State</label>
+                <select id="state"  name="user-state" class="contact-input">
+                    <option value="state"selected disabled>Choose State</option>
+                    <option value="state">Uganda</option>
+                    <option value="state">Kenya</option>
+                    <option value="state">Tanzania</option>
+                    <option value="state">Rwanda</option>
+                    <option value="state">Somalia</option>
+                    <option value="state">Ghana</option>
+                    <option value="state">Nigeria</option>
+                    <option value="state">Mali</option>
+                    <option value="state">Botswana</option>
+                    <option value="state">Burundi</option>
+                    <option value="state">Congo</option>
+                    <option value="state">Sudan</option>
+                    <option value="state">Ethiopia</option>
+                    <option value="state">Senegal</option>
+                    <option value="state">Ivory Coast</option>
+                    <option value="state">Malawi</option>
+                    <option value="state">Swaziland</option>
+                </select>
 
-            <label for="city">City</label>
-            <input type="text" id="city" name="user-city">
+                <label for="zip" class="cantact-label">Zip Code</label>
+                <input type="text" id="zip" name="user-zip-code">
+            </fieldset>
+            <fieldset>
+                <legend>Newsletter</legend>
 
-            <label for="state">State</label>
-            <select id="state">
-                <option value="state">Uganda</option>
-                <option value="state">Kenya</option>
-                <option value="state">Tanzania</option>
-                <option value="state">Rwanda</option>
-                <option value="state">Somalia</option>
-                <option value="state">Ghana</option>
-                <option value="state">Nigeria</option>
-                <option value="state">Mali</option>
-                <option value="state">Botswana</option>
-                <option value="state">Burundi</option>
-                <option value="state">Congo</option>
-                <option value="state">Sudan</option>
-                <option value="state">Ethiopia</option>
-                <option value="state">Senegal</option>
-                <option value="state">Ivory Coast</option>
-                <option value="state">Malawi</option>
-                <option value="state">Swaziland</option>
-            </select>
+                <label>Select the newsletter ypu would like to receive</label>
 
-            <label for="zip">Zip Code</label>
-            <input type="text" id="zip" name="user-zip-code">
-        </fieldset>
-        <fieldset>
-            <legend>Newsletter</legend>
+                <input type="checkbox" id="check" value="html-news"><label for="check">HTML News</label>
+                <input type="checkbox" id="check" value="css-news"><label for="check">CSS News</label>
+                <input type="checkbox" id="check" value="javascript-news"><label for="check">Javascript News</label>
 
-            <label>Select the newsletter ypu would like to receive</label>
+                <label>Newsletter Format</label>
 
-            <input type="checkbox" id="check" value="html-news"><label for="check">HTML News</label>
-            <input type="checkbox" id="check" value="css-news"><label for="check">CSS News</label>
-            <input type="checkbox" id="check" value="javascript-news"><label for="check">Javascript News</label>
+                <input type="radio" id="html" name="check" value="html"><label for="html">HTML</label>
+                <input type="radio" id="plain" name="check" value="plain-text"><label for="plain">Plain Text</label>
 
-            <label>Newsletter Format</label>
-
-            <input type="radio" id="html" name="check" value="html"><label for="html">HTML</label>
-            <input type="radio" id="plain" name="check" value="plain-text"><label for="plain">Plain Text</label>
-
-            <label>Other topics you'd like to hear about</label>
-            <textarea></textarea>
-        </fieldset>
-
-        <button type="submit" value="submit">Sign Up</button>
-    </form>
+                <label for="textarea">Other topics you'd like to hear about</label>
+                <textarea id="textarea" name="user-message"></textarea>
+            </fieldset>
+            <div class="center-button">
+            <button type="submit" value="submit">Sign Up</button>
+            </div>
+        </form>
+    </div>
 </body>
 </html>

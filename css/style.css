@@ -1,3 +1,55 @@
 :root{
     font-family: 'Roboto', sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1{
+    background-color: rgb(8, 41, 71);
+    text-align: center;
+    color: white;
+    padding: 30px;
+    margin: 0;
+}
+
+.top-wrap{
+    text-align: center;
+    margin-top: 30px;
+    border-bottom: 5px solid rgb(8, 41, 71);;
+}
+
+.form-wrap{
+    border-top: 2px solid rgb(8, 41, 71);
+    margin-top: 3px;
+    padding-top: 50px;
+}
+
+.center-button{
+    margin: auto;
+}
+button{
+    width: 70%;
+    padding: 15px;
+    background-color: rgb(75, 177, 168);
+    border:2px solid rgb(75, 177, 168);
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+button:hover{
+    background-color:rgb(2, 211, 193);
+    border: 2px solid rgb(30, 211, 196);
+    cursor: pointer;
+}
+
+.contact-input{
+    display: block;
+    width: calc(100% - 50px);
+    padding:10px;
+}
+
+fieldset{
+    border: none;
 }
