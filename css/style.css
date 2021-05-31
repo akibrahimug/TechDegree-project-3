@@ -55,7 +55,6 @@ button:hover{
 }
 
 .contact-input{
-    display: block;
     width: calc(100% - 50px);
     padding:15px;
     margin: 15px;
@@ -141,5 +140,5 @@ label.wrap-2{
 }
 
 @media(min-width:768px){
-    
+   
 }
