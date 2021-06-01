@@ -1,13 +1,13 @@
-
-:root{
+/* ====Root styles==== */
+html:root{
+    box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    max-width: 1000px;
-    width: 90%;
-    margin: 0 auto;
     color: rgb(8, 41, 71);
 }
-
+/* Header styles */
 h1{
+    max-width:1600px;
+    width: 100%;
     background-color: rgb(8, 41, 71);
     text-align: center;
     color: white;
@@ -15,50 +15,61 @@ h1{
     margin: 0;
 }
 
+
 .top-p{
     font-weight: 100;
+    
 }
 
 .top-wrap{
     text-align: center;
     margin-top: 30px;
     border-bottom: 5px solid rgb(8, 41, 71);
+    margin-left: 35px;
 }
-
-.form-wrap{
-    border-top: 2px solid rgb(8, 41, 71);
+.border-style{
+    border: 1px solid rgb(8, 41, 71);
+    margin-left: 35px;
     margin-top: 3px;
-    padding-top: 50px;
 }
-
+/* Button Styles */
 .center-button{
     display: flex;
     justify-content: center;
 }
 button{
-    width: 80%;
+    width: 100%;
     padding: 15px;
     background-color: rgb(75, 177, 168);
-    border:2px solid rgb(75, 177, 168);
+    border: none;
     border-radius: 5px;
     color: white;
     font-weight: bolder;
     font-size: 20px;
     margin-top: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+    margin-left: 30px;
 }
 
 button:hover{
     background-color:rgb(2, 211, 193);
-    border: 2px solid rgb(30, 211, 196);
+   border: none;
     cursor: pointer;
 }
+/* Input styles */
 
+.form-wrap{
+    margin-top: 3px;
+    padding-top: 30px;
+    margin-left: 20px;
+}
 .contact-input{
-    width: calc(100% - 50px);
+    width: 100%;
+    max-width: 500px;
     padding:15px;
     margin: 15px;
     margin-left: 0;
+    margin-right: 0;
 }
 
 .contact-input,
@@ -71,7 +82,8 @@ textarea{
 
 input:focus,
 select:focus,
-textarea:focus{
+textarea:focus,
+#zip:focus{
     outline: none;
     border: 1.5px solid rgb(8, 41, 71);
 }
@@ -86,15 +98,10 @@ legend{
 }
 #zip{
     display: block;
-    width: 50%;
+    width: 30%;
     padding: 15px;
     margin: 15px;
     margin-left: 0;
-}
-
-#zip:focus{
-    outline: none;
-    border: 1.5px solid rgb(8, 41, 71);
 }
 
 ::placeholder{
@@ -104,15 +111,18 @@ legend{
 }
 
 textarea{
-    width:90%;
+    width:100%;
     height: 100px;
     margin-top: 10px;
     padding: 15px;
+    
 }
 
-select{
+select#state{
     color: rgb(97, 95, 95);
 }
+
+
 
 .fieldset-wrap{
     border-top: 3px solid rgb(8, 41, 71);
@@ -130,7 +140,8 @@ select{
     padding: 6px;
 }
 
-#check,
+#check-1,
+#check-2,
 label.wrap-2{
     padding: 10px;
 }
@@ -139,6 +150,47 @@ label.wrap-2{
     font-size: 13px;
 }
 
+/* Footer styles */
+footer p{
+    text-align: center;
+    margin-left: 35px;
+    margin-bottom: 30px;
+    color: gray;
+    font-style: italic;
+    font-weight: bold;
+}
+/* =====MEDIA QUERIES====== */
 @media(min-width:768px){
-   
+
+    .form-wrap{
+        max-width: 600px;
+        width:100%;
+        margin-left: 20%;
+        
+    }
+   .col{
+       display: flex;
+       align-items: center;
+       justify-content:space-between;
+   }
+
+   .zip-code{
+       margin-right: 20%;
+   }
+
+   label.contact-label{
+      margin-right: 10px;
+   }
+
+   .contact-input{
+       width: 400px;
+   }
+
+  .zip-code{
+      margin-right: 300px;
+  }
+
+  #state{
+      margin-right: 30px;
+  }
 }

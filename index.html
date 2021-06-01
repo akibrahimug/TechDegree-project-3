@@ -16,6 +16,7 @@
         <h2>Signup for our newsletter</h2>
         <p class="top-p">Get the latest news on how your code is doing right in your inbox</p>
     </div>
+    <div class="border-style"></div>
     <div class="form-wrap">
         <form>
             <fieldset>
@@ -31,29 +32,29 @@
 
                     <div class="col"><label for="city" class="cantact-label">City</label> <input type="text" id="city" name="user-city" class="contact-input"></div>
 
-                    <div class="col"><label for="state" class="cantact-label">State</label> <select id="state"  name="user-state" class="contact-input"></div>
-                        <option value="state"selected disabled>Choose State</option>
-                        <option value="state">Uganda</option>
-                        <option value="state">Kenya</option>
-                        <option value="state">Tanzania</option>
-                        <option value="state">Rwanda</option>
-                        <option value="state">Somalia</option>
-                        <option value="state">Ghana</option>
-                        <option value="state">Nigeria</option>
-                        <option value="state">Mali</option>
-                        <option value="state">Botswana</option>
-                        <option value="state">Burundi</option>
-                        <option value="state">Congo</option>
-                        <option value="state">Sudan</option>
-                        <option value="state">Ethiopia</option>
-                        <option value="state">Senegal</option>
-                        <option value="state">Ivory Coast</option>
-                        <option value="state">Malawi</option>
-                        <option value="state">Eswatini</option>
-                    </select>
+                    <div class="col"><label for="state" class="cantact-label">State</label> <select id="state"  name="user-state" class="contact-input">
+                        <option value="cs" selected disabled>Choose State</option>
+                        <option value="ug">Uganda</option>
+                        <option value="ke">Kenya</option>
+                        <option value="tz">Tanzania</option>
+                        <option value="rw">Rwanda</option>
+                        <option value="sm">Somalia</option>
+                        <option value="gh">Ghana</option>
+                        <option value="ng">Nigeria</option>
+                        <option value="ma">Mali</option>
+                        <option value="bot">Botswana</option>
+                        <option value="br">Burundi</option>
+                        <option value="drc">Congo</option>
+                        <option value="sa">Sudan</option>
+                        <option value="eth">Ethiopia</option>
+                        <option value="se">Senegal</option>
+                        <option value="ic">Ivory Coast</option>
+                        <option value="ml">Malawi</option>
+                        <option value="e-s">Eswatini</option>
+                    </select></div>
 
-                    <div class="col"></div><label for="zip" class="cantact-label">Zip Code</label></div>
-                    <div class="col"> <input type="text" id="zip" name="user-zip-code" class="contact-input"></div>
+                    <div class="col zip-code"><label for="zip" class="cantact-label">Zip Code</label>
+                   <input type="text" id="zip" name="user-zip-code" class="contact-input"></div>
                 </div>
             </fieldset>
             <div class="fieldset-wrap">
@@ -66,19 +67,19 @@
                         <label class="label-check" for="check">HTML News</label>
                     </div>
                     <div class="check">
-                        <input type="checkbox" id="check" value="css-news">  <label class="label-check" for="check">CSS News</label>
+                        <input type="checkbox" id="check-1" value="css-news">  <label class="label-check" for="check">CSS News</label>
                     </div>
                     <div class="check">
-                        <input type="checkbox" id="check" value="javascript-news">  <label class="label-check" for="check">Javascript News</label>
+                        <input type="checkbox" id="check-2" value="javascript-news">  <label class="label-check" for="check">Javascript News</label>
                     </div>
                     <div class="fieldset-wrap-2">
                         <label class="newsletter-title">Newsletter Format</label>
                     </div>
                     <div class="radio">
-                    <input type="radio" id="html" name="html" value="html">  <label class="label-check" for="html">HTML</label>
+                    <input type="radio" id="html" name="format" value="html">  <label class="label-check" for="html">HTML</label>
                     </div>
                     <div class="radio">
-                    <input type="radio" id="plain" name="plaintext" value="plain-text">  <label class="label-check" for="plain">Plain Text</label>
+                    <input type="radio" id="plain" name="format" value="plain-text">  <label class="label-check" for="plain">Plain Text</label>
                     </div>
                     <label class="textarea-label" for="textarea">Other topics you'd like to hear about</label>
                     <textarea id="textarea" name="user-message"></textarea>
@@ -89,5 +90,8 @@
             </div>
         </form>
     </div>
+    <footer>
+        <p>Copyrite The Code Review</p>
+    </footer>
 </body>
 </html>
