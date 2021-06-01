@@ -193,4 +193,9 @@ footer p{
   #state{
       margin-right: 30px;
   }
+
+  textarea,
+  button{
+      width: 80%;
+  }
 }
