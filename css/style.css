@@ -3,52 +3,71 @@ html:root{
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     color: rgb(8, 41, 71);
+    margin: 0 auto;
+}
+
+.container{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 600px;
 }
 /* Header styles */
 h1{
-    max-width:1600px;
-    width: 100%;
+    font-size: 1.5em;
     background-color: rgb(8, 41, 71);
     text-align: center;
     color: white;
-    padding: 30px;
+    padding: 23px;
     margin: 0;
 }
 
+h2{
+    font-size: 1.2em;
+    margin: 0;
+}
 
 .top-p{
-    font-weight: 100;
-    
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.top-p,
+.newsletter-title,
+.contact-label,
+.bottom.textarea-label,
+.label-check{
+    color: gray;
 }
 
 .top-wrap{
     text-align: center;
     margin-top: 30px;
     border-bottom: 5px solid rgb(8, 41, 71);
-    margin-left: 35px;
 }
 .border-style{
     border: 1px solid rgb(8, 41, 71);
-    margin-left: 35px;
     margin-top: 3px;
 }
+
 /* Button Styles */
 .center-button{
     display: flex;
     justify-content: center;
 }
 button{
-    width: 100%;
+    width: calc(100% - 10px);
     padding: 15px;
+    padding-left: 0;
+    padding-right: 0;
     background-color: rgb(75, 177, 168);
     border: none;
     border-radius: 5px;
     color: white;
     font-weight: bolder;
-    font-size: 20px;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    margin-left: 30px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 button:hover{
@@ -58,67 +77,100 @@ button:hover{
 }
 /* Input styles */
 
-.form-wrap{
-    margin-top: 3px;
-    padding-top: 30px;
-    margin-left: 20px;
+.contact-label{
+    color: gray;
+    font-size: 13px;
 }
+
+.bottom.newsletter-title,
+.bottom-2{
+    display: block;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.bottom.textarea-label{
+    font-size: 14px;
+}
+
+.bottom-2{
+    margin-top:15px;
+}
+
 .contact-input{
-    width: 100%;
-    max-width: 500px;
-    padding:15px;
-    margin: 15px;
-    margin-left: 0;
-    margin-right: 0;
+    width: calc(100% - 20px);
+    height: 25px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+#zip{
+    display: block;
+    width: 50%;
 }
 
 .contact-input,
 #zip,
 textarea{
-    border: 2px solid white;
-    background-color: rgb(236, 234, 234);
+    border: 2px solid rgb(233, 244, 255);
+    background-color: rgb(233, 244, 255);
     border-radius: 5px;
+    transition-property: border, width;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
 }
 
-input:focus,
+.contact-input:focus,
 select:focus,
 textarea:focus,
 #zip:focus{
     outline: none;
     border: 1.5px solid rgb(8, 41, 71);
+    width: 80%;
+    
 }
 
 fieldset{
     border: none;
+    padding-left: 0;
+    padding-right: 0;
 }
+.fieldset-wrap{
+    background-color: rgb(207, 248, 239);
+    padding: 10px;
+}
+
 legend{
-    font-size: 20px;
+    font-size: 17px;
+    font-weight: bold;
     padding: 15px;
     padding-left: 0;
-}
-#zip{
-    display: block;
-    width: 30%;
-    padding: 15px;
-    margin: 15px;
     margin-left: 0;
 }
 
+
 ::placeholder{
+    font-style: oblique;
     font-size: 12px;
     text-align: right;
     padding-right: 5px;
 }
 
 textarea{
-    width:100%;
-    height: 100px;
+    width: calc(100% - 20px);
+    height: 90px;
     margin-top: 10px;
-    padding: 15px;
+    padding: 10px;
+    resize: none;
+    
     
 }
 
 select#state{
+    width: calc(100% + 4px);
+    height: 50px;
+    font-size: 13px;
     color: rgb(97, 95, 95);
 }
 
@@ -128,22 +180,16 @@ select#state{
     border-top: 3px solid rgb(8, 41, 71);
 }
 
-.newsletter-title{
-    font-size: 15px;
-    display: block;
-    margin: 10px;
-}
-
 .check,
 .radio{
     display: block;
-    padding: 6px;
+    margin: 10px;
+    margin-left: 0;
+    
 }
 
-#check-1,
-#check-2,
-label.wrap-2{
-    padding: 10px;
+label.contact-label{
+    color: gray;
 }
 
 .label-check{
@@ -152,50 +198,45 @@ label.wrap-2{
 
 /* Footer styles */
 footer p{
+    font-size: 13px;
     text-align: center;
-    margin-left: 35px;
-    margin-bottom: 30px;
     color: gray;
     font-style: italic;
     font-weight: bold;
 }
+
+.col{
+    display: flex;
+    flex-direction: column;
+
+}
 /* =====MEDIA QUERIES====== */
 @media(min-width:768px){
-
-    .form-wrap{
-        max-width: 600px;
-        width:100%;
-        margin-left: 20%;
-        
+    .top-fieldset{
+        width: 100%;
     }
    .col{
        display: flex;
+       flex-direction: row;
        align-items: center;
-       justify-content:space-between;
-   }
-
-   .zip-code{
-       margin-right: 20%;
    }
 
    label.contact-label{
       margin-right: 10px;
+      width: 150px;
    }
 
-   .contact-input{
-       width: 400px;
+   label.zipcode{
+       width: 115px
    }
 
-  .zip-code{
-      margin-right: 300px;
+   #zip{
+       width: 25%;
+   }
+   
+   fieldset{
+      padding-left: 0;
+      padding-right: 0;
   }
 
-  #state{
-      margin-right: 30px;
-  }
-
-  textarea,
-  button{
-      width: 80%;
-  }
 }
